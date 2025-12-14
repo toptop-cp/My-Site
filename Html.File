@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oliveros Lab 3</title>
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="potpot.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header class="navbar">
+  <div class="nav-container">
+    <h2 class="logo">MyPortfolio</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#message">Message Me</a>
+      <button id="themeBtn" class="btn btn-theme">Dark Mode</button>
+    </nav>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<section id="main-content">
+
+<!-- LEFT COLUMN -->
+<div class="left-column">
+
+  <div id="home" class="profile-section card">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.O8lwlpbolAjmMPZPRi5b7gHaLH?rs=1&pid=ImgDetMain"
+         alt="Profile Image"
+         class="profile-img">
+
+    <h2 class="name">Justine Lawrence A. Oliveros</h2>
+    <p class="job-title">Web Developer</p>
+    <button id="editTitleBtn" class="btn btn-edit">Edit Job Title</button>
+  </div>
+
+  <div class="contact-section card">
+    <h3>Contact</h3>
+    <p>Email:<br>
+      <a href="mailto:justinelawrence.oliveros@gmail.com">
+        justinelawrence.oliveros@gmail.com
+      </a>
+    </p>
+  </div>
+
+  <div class="skills-section card">
+    <h3>Skills</h3>
+    <dl>
+      <dt>N-Card Enjoyer</dt>
+      <dd>Lumbay</dd>
+      <dd>Tagagawa ng Pag-ibig</dd>
+      <dd>Umaawit ng My Way</dd>
+      <dd>Mapagmahal 101</dd>
+    </dl>
+  </div>
+
+    <button id="toggleSkillsBtn" class="btn btn-toggle">Hide Skills</button>
+
+</div>
+
+<!-- RIGHT COLUMN -->
+<div class="right-column">
+
+  <div id="about" class="about-section card">
+    <h2>About Me</h2>
+    <p>
+      I am a college student of NU Fairview, passionate about creating clean and modern
+      web designs. I enjoy learning new technologies and improving my skills in web development.
+    </p>
+  </div>
+
+  <div id="message" class="message-form card">
+    <h2>Message Me</h2>
+
+    <form onsubmit="return validateForm()">
+      <p>Name:<br>
+        <input type="text" name="name">
+      </p>
+
+      <p>Email:<br>
+        <input type="email" name="email">
+      </p>
+
+      <p>Message:<br>
+        <textarea id="messageBox" maxlength="100"></textarea>
+      </p>
+
+      <p>Characters left: <span id="charCount">100</span></p>
+
+      <p>
+        <input type="submit" value="Send" class="btn btn-send">
+
+      </p>
+    </form>
+  </div>
+
+  <!-- EXTRA FEATURE -->
+  <div class="card">
+    <h3>Motivational Quote</h3>
+    <p id="quote">Click the button for motivation!</p>
+    <button onclick="newQuote()" class="btn btn-quote">New Quote</button>
+
+  </div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p><strong>WebProg - Web Programming 2025</strong></p>
+  <p id="todayDate"></p>
+</footer>
+
+<!-- JS -->
+<script src="pot.js"></script>
+</body>
+</html>
