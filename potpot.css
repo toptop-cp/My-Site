@@ -1,0 +1,169 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #797979;
+  color: #333;
+  transition: 0.3s;
+}
+
+.dark-mode {
+  background-color: #333333;
+  color: #f0f0f0;
+}
+
+.dark-mode .card {
+  background-color: #6d6d6d;
+  color: #f0f0f0;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #5e4537;
+  padding: 15px 0;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a,
+.navbar button {
+  margin-left: 15px;
+  padding: 8px 12px;
+  border: oklch(from color l c h);
+  cursor: pointer;
+  background: none;
+  color: rgb(0, 242, 255);
+  font-family: inherit;
+}
+
+.navbar button {
+  background: #1b1c1c;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* Dark mode toggle */
+.btn-theme {
+  background-color: #6336af;
+  color: white;
+}
+.btn-theme:hover {
+  background-color: #5e35b1;
+}
+
+/* Edit button */
+.btn-edit {
+  background-color: #2196f3;
+  color: white;
+}
+.btn-edit:hover {
+  background-color: #1e88e5;
+}
+
+/* Hide / Show skills */
+.btn-toggle {
+  background-color: #ff9800;
+  color: white;
+}
+.btn-toggle:hover {
+  background-color: #fb8c00;
+}
+
+/* Send button */
+.btn-send {
+  background-color: #4caf50;
+  color: white;
+}
+.btn-send:hover {
+  background-color: #43a047;
+}
+
+/* Quote button */
+.btn-quote {
+  background-color: #e91e63;
+  color: white;
+}
+.btn-quote:hover {
+  background-color: #d81b60;
+}
+
+.dark-mode .btn {
+  opacity: 0.9;
+}
+
+/* LAYOUT */
+#main-content {
+  display: flex;
+  max-width: 1100px;
+  margin: 40px auto;
+  gap: 25px;
+}
+
+.left-column { flex: 1; }
+.right-column { flex: 3; }
+
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+}
+
+/* PROFILE */
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+.name, .job-title {
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* FORM */
+textarea,
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
